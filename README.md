@@ -7,10 +7,10 @@
 
 # 1 Patent Experiment Setup
 
-- Train Model-RGB-G1 under Empties_Carla_SLAM train dataset **RGB**
+- Train Model-RGB-G1 under Emptycites_Carla_SLAM train dataset **RGB**
 - Test Model-RGB-G1 in THREE test dataset **RGB**
 
-- FIx Model-RGB-G1 train Model-RGB-G2 under Empties_Carla_SLAM train dataset **RGB**
+- FIx Model-RGB-G1 train Model-RGB-G2 under Emptycities_Carla_SLAM train dataset **RGB**
 
 
 
@@ -20,8 +20,8 @@
 
 ### 2.1.1 Generation Aspect
 
-- train Based: Empties_Carla_SLAM train dataset
-- test Based: Empties_Carla_SLAM test dataset, and build another TWO (different dynamic rate)
+- train Based: Emptycites_Carla_SLAM train dataset
+- test Based: Emptycites_Carla_SLAM test dataset, and build another TWO (different dynamic rate)
 
 ### 2.1.2 Re-localization Aspect
 
