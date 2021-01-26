@@ -1,9 +1,6 @@
-# Dynamic2static-Image-Transformation
+# Dynamict-to-static-Transformation
 * Dynamic Region Detection and Static Scene Recovery in Visual SLAM System.
 * Acknowledge: **Postgraduate Research＆Practice Innovation Program of Jiangsu Province SJCX20_0035**
-* Time: 2020.06--2021.06
-
-
 
 # 1 Patent Experiment Setup
 
