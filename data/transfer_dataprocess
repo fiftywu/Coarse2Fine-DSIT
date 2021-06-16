@@ -17,7 +17,7 @@ class DataProcess(torch.utils.data.Dataset):
         super(DataProcess, self).__init__()
         self.opt = opt
         if self.opt.isTrain:
-            ## [9 and 5]
+            ## [10 and 5]
             self.rate = 5
             self.dir_inpainting = '/home/fiftywu/fiftywu/Files/DeepLearning/Cityscape_Inpainting/dataset/train'
             self.inpainting_paths = sorted([os.path.join(self.dir_inpainting, name) for name in os.listdir(self.dir_inpainting)])
