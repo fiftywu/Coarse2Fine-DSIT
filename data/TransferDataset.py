@@ -1,7 +1,3 @@
-"""
-transfer_dataprocess
-"""
-
 import os
 import torch
 import torch.utils.data
@@ -12,16 +8,15 @@ import random
 import matplotlib.pyplot as plt
 import cv2
 
-class DataProcess(torch.utils.data.Dataset):
+class TransferDataset(torch.utils.data.Dataset):
     def __init__(self, opt):
-        super(DataProcess, self).__init__()
+        super(TransferDataset, self).__init__()
         self.opt = opt
         if self.opt.isTrain:
             ## [10 and 5]
             self.rate = 5
             self.dir_inpainting = '/home/fiftywu/fiftywu/Files/DeepLearning/Cityscape_Inpainting/dataset/train'
             self.inpainting_paths = sorted([os.path.join(self.dir_inpainting, name) for name in os.listdir(self.dir_inpainting)])
-            # self.inpainting_paths = sorted([os.path.join(self.dir_inpainting, name) for name in os.listdir(self.dir_inpainting)])
 
             self.rand_dir_inpainting = '/home/fiftywu/fiftywu/Files/DeepLearning/Cityscape_Inpainting/dataset/rand'
             self.rand_inpainting_paths = sorted([os.path.join(self.rand_dir_inpainting, name) for name in os.listdir(self.rand_dir_inpainting)])
@@ -34,7 +29,6 @@ class DataProcess(torch.utils.data.Dataset):
 
     def __getitem__(self, index):
         ##------realistic------##
-
         raw_AC_path = self.inpainting_paths[index]
         raw_AC = Image.open(raw_AC_path)  # PIL 0,255
         w, h = raw_AC.size
