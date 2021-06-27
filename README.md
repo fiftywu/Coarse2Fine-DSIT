@@ -83,11 +83,11 @@ python test.py --phase val --gpu_ids 0 --eval --no_flip --netG Coarse2fineNet
 
 ## Evaluation Scripts
 
-...
+.
 
 ## Citation
 
-...
+.
 
 ## Acknowledge
 
