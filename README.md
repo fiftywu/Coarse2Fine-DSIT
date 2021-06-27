@@ -46,7 +46,7 @@ python train.py --gpu_ids 0 --batchSize 4 --netG Coarse2fineNet --netD SA
 - Visualization on TensorBoard for training is supported.
 
 ```
-tensorboard --logdir model_logs --port 6006`
+tensorboard --logdir model_logs --port 6006
 ```
 
 ## Test
