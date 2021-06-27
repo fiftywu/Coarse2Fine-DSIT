@@ -32,13 +32,15 @@
 - First step: train coarse network
 
 ```
-python train.py --gpu_ids 0 --batchSize 4 --netG unet_256 --netD basic --mode Coarse --name CoarseNet_unet8_load400
+python train.py --gpu_ids 0 --batchSize 4 --netG unet_256 --netD basic 
+--mode Coarse --name CoarseNet_unet8_load400
 ```
 
 - Second step: end-to-end train coarse-to-fine network
 
 ```
-python train.py --gpu_ids 0 --batchSize 4 --netG Coarse2fineNet --netD SA --mode Coarse2fine --name Coarse2fineNet_unet8_1206
+python train.py --gpu_ids 0 --batchSize 4 --netG Coarse2fineNet --netD SA 
+--mode Coarse2fine --name Coarse2fineNet_unet8_1206
 ```
 
 - Visualization on TensorBoard for training is supported.
@@ -52,13 +54,15 @@ tensorboard --logdir model_logs --port 6006`
 - test coarse network
 
 ```
-python test.py --phase test --gpu_ids 0 --eval --no_flip --netG unet_256 --mode Coarse --name CoarseNet_unet8_load400 --which_epoch 21
+python test.py --phase test --gpu_ids 0 --eval --no_flip --netG unet_256 
+--mode Coarse --name CoarseNet_unet8_load400 --which_epoch 21
 ```
 
 - test coarse2fine network
 
 ```
-python test.py --phase test --gpu_ids 0 --eval --no_flip --netG Coarse2fineNet --mode Coarse2fine --name Coarse2fineNet_unet8_1206 --which_epoch 42
+python test.py --phase test --gpu_ids 0 --eval --no_flip --netG Coarse2fineNet 
+--mode Coarse2fine --name Coarse2fineNet_unet8_1206 --which_epoch 42
 ```
 
 ## Transfer to Real Data
@@ -66,13 +70,15 @@ python test.py --phase test --gpu_ids 0 --eval --no_flip --netG Coarse2fineNet -
 - load pretrained model (i.e. which epoch) on CARLA synthetic dataset, then continue train from next one epoch by an appropriate learning rate on [Cityscapes Dataset](https://www.cityscapes-dataset.com/).
 
 ```
-python train.py --gpu_ids 0 --batchSize 1 --lr 0.0001 --netG Coarse2fineNet --netD SA --mode Transfer --name transferModel_0614 --continue_train --which_epoch 42 --epoch_count 43
+python train.py --gpu_ids 0 --batchSize 1 --lr 0.0001 --netG Coarse2fineNet --netD SA 
+--mode Transfer --name transferModel_0614 --continue_train --which_epoch 42 --epoch_count 43
 ```
 
 - test
 
 ```
-python test.py --phase val --gpu_ids 0 --eval --no_flip --netG Coarse2fineNet --mode  Transfer --name transferModel_0614 --which_epoch 42
+python test.py --phase val --gpu_ids 0 --eval --no_flip --netG Coarse2fineNet 
+--mode  Transfer --name transferModel_0614 --which_epoch 42
 ```
 
 ## Evaluation Scripts
