@@ -5,7 +5,6 @@
 
 ## News
 
-- 2021.6.25 return
 
 ## Installation
 
