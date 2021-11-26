@@ -82,7 +82,7 @@ python test.py --phase val --gpu_ids 0 --eval --no_flip --netG Coarse2fineNet
 
 ## Resource
 
-[Related Resource in my BaiduCloud](https://pan.baidu.com/s/1KpuWKwNpkP3xizcLg5k-ww)( Extraction-code:5250 )
+[Related Resource in my BaiduCloud](https://pan.baidu.com/s/1KpuWKwNpkP3xizcLg5k-ww)(Extraction-code:5250)
 
 ## Evaluation Scripts
 
