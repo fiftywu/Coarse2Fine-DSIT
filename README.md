@@ -80,6 +80,11 @@ python test.py --phase val --gpu_ids 0 --eval --no_flip --netG Coarse2fineNet
 --mode  Transfer --name transferModel_0614 --which_epoch 42
 ```
 
+## Resource
+```
+Resouce-link：https://pan.baidu.com/s/1bPDkA2UI4ipTABpodSTnAA 
+Extraction-code：5250
+```
 ## Evaluation Scripts
 
 .
