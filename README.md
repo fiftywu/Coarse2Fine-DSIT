@@ -1,5 +1,5 @@
 # Dynamic-to-static Image Transformation
-> PyTorch implementation of   *A Coarse-to-Fine Approach for Dynamic-to-static Image Transformation*
+> Dataset and code for our Pattern-Recognition paper: 《[A Coarse-to-Fine Approach for Dynamic-to-static Image Transformation](https://doi.org/10.1016/j.patcog.2021.108373)》
 
 <img src=".\examples\example.png" width="800px" />
 
@@ -14,7 +14,7 @@
 
 - Synthetic Dataset: [EmptyCities](https://github.com/BertaBescos/EmptyCities_SLAM) (for train, test and validation)
 
-  >this dataset is generated with [CARLA 0.8.2](https://drive.google.com/file/d/1ZtVt1AqdyGxgyTm69nzuwrOYoPUn_Dsm/view) by Berta et al. in [TRO20 Paper](https://arxiv.org/abs/2010.07646);
+  >this dataset is generated with [CARLA 0.8.2](https://drive.google.com/file/d/1ZtVt1AqdyGxgyTm69nzuwrOYoPUn_Dsm/view) by Berta et al. in [IEEE TRO2020 Paper](https://arxiv.org/abs/2010.07646);
   >
   >and it is available in [this link](https://drive.google.com/drive/folders/1aDO7_HtVkCncGew9ZMpDJ9KCT4fYD8hm?usp=sharing);
   >
@@ -22,8 +22,7 @@
 
 - Synthetic Dataset: New (**with large dynamic  rate range!!**)
 
-  > this dataset is generated with [CARLA 0.8.2](https://drive.google.com/file/d/1ZtVt1AqdyGxgyTm69nzuwrOYoPUn_Dsm/view) by us in [This Paper]() for further evaluation;
-  >
+  > this dataset is generated with [CARLA 0.8.2](https://drive.google.com/file/d/1ZtVt1AqdyGxgyTm69nzuwrOYoPUn_Dsm/view) by us for further evaluation;
   > and it is available in [this link]();
 
 ## Train
@@ -84,12 +83,19 @@ python test.py --phase val --gpu_ids 0 --eval --no_flip --netG Coarse2fineNet
 
 [Related Resource in my BaiduCloud](https://pan.baidu.com/s/1KpuWKwNpkP3xizcLg5k-ww)(Extraction-code:5250)
 
-## Evaluation Scripts
-
-.
-
 ## Citation
-
+```
+@article{WANG2022108373,
+title = {A coarse-to-fine approach for dynamic-to-static image translation},
+journal = {Pattern Recognition},
+volume = {123},
+pages = {108373},
+year = {2022},
+issn = {0031-3203},
+doi = {https://doi.org/10.1016/j.patcog.2021.108373},
+url = {https://www.sciencedirect.com/science/article/pii/S0031320321005537},
+author = {Teng Wang and Lin Wu and Changyin Sun},
+```
 .
 
 ## Acknowledge
